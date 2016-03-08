@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/demo.css">   
+</head>
+<body>
+    <div class="wrap" id="w0">
+        <div class="title">Dark</div>
+        <ul class="pic">
+            <li class="pt pn" value="0" id="p0"><a href=""><img src="image/0.png"></a></li>
+            <li class="pt" value="1"><a href=""><img src="image/1.png"></a></li>
+            <li class="pt" value="2"><a href=""><img src="image/2.png"></a></li>
+            <li class="pt" value="3"><a href=""><img src="image/3.png"></a></li>
+        </ul>      
+    </div>
+    <div class="wrap wt" id="w1">
+        <div class="title t1">Deongaree</div>
+        <ul class="pic">
+            <li class="pt pn" value="0"><a href=""><img src="image/0.png"></a></li>
+            <li class="pt" value="1" id="p1"><a href=""><img src="image/1.png"></a></li>
+            <li class="pt" value="2"><a href=""><img src="image/2.png"></a></li>
+            <li class="pt" value="3"><a href=""><img src="image/3.png"></a></li>
+        </ul>      
+    </div>
+    <div class="wrap wt" id="w2">
+        <div class="title t2">Misty</div>
+        <ul class="pic">
+            <li class="pt pn" value="0"><a href=""><img src="image/0.png"></a></li>
+            <li class="pt" value="1"><a href=""><img src="image/1.png"></a></li>
+            <li class="pt" value="2"><a href=""><img src="image/2.png"></a></li>
+            <li class="pt" value="3"><a href=""><img src="image/3.png"></a></li>
+        </ul>      
+    </div>
+    <div class="wrap wt" id="w3">
+        <div class="title t3">Illusion</div>
+        <ul class="pic">
+            <li class="pt pn" value="0"><a href=""><img src="image/0.png"></a></li>
+            <li class="pt" value="1"><a href=""><img src="image/1.png"></a></li>
+            <li class="pt" value="2"><a href=""><img src="image/2.png"></a></li>
+            <li class="pt" value="3"><a href=""><img src="image/3.png"></a></li>
+        </ul>      
+    </div>
+    <img src="image/prev1.png" id="prev">
+    <img src="image/next1.png" id="next">
+</body>
+<script type="text/javascript">
+    //自动轮播
+    var index=0;
+    var picArr=document.getElementsByClassName("pic")[0].getElementsByTagName("li");
+    var picLen=picArr.length;
+    var autoChange=setInterval(function(){
+        if(index<picLen-1){
+            index++;
+        }
+        else{
+            index=0;
+        }
+        change(index);
+    },3000);
+</script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/demo.js"></script>
+</html>
