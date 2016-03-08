@@ -15,52 +15,54 @@ body{
     display: block;
     z-index: 5;
 }
-.wt{
-    display: none;
-    z-index: 1;
-}
-#w0{
+.w0{
     background: url(../image/0.png) no-repeat;
     background-size: 1350px 600px;
 }
-#w1{
+.w1{
     background: url(../image/1.png) no-repeat;
     background-size: 1350px 600px;
 }
-#w2{
+.w2{
     background: url(../image/2.png) no-repeat;
     background-size: 1350px 600px;
 }
-#w3{
+.w3{
     background: url(../image/3.png) no-repeat;
     background-size: 1350px 600px;
 }
 
 .title{
-    display: block;
-    padding-left: 600px;
-    padding-top: 210px;
+    
+}
+.tt{
+    display: none;
+    padding-left: 550px;
+    margin-top: -390px;
     font-family: Cambria,Georgia,serif;
     font-size: 72px;
     color: #554236;
 }
+.tb{
+    display: block;
+}
 .t1{
-    padding-left: 505px;
+    padding-left: 455px;
     color: #91989F;
 }
 .t2{
-    padding-left: 575px;
+    padding-left: 525px;
     color: #3A8FB7;
 }
 .t3{
-    padding-left: 560px;
+    padding-left: 510px;
     color: #F19483;
 }
 
 .pic{
     position: absolute;
     float: left;
-    margin-top: 130px;
+    margin-top: 360px;
     margin-left: 200px;
 }
 .pic li{
@@ -75,7 +77,7 @@ body{
 }
 
 #prev,#next{
-    margin-top: -145px;
+    margin-top: 60px;
     width: 100px;
     height: 100px;
     position: absolute;

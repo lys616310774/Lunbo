@@ -1,17 +1,35 @@
     var index=0;
     var picArr=document.getElementsByClassName("pic")[0].getElementsByTagName("li");
     var picLen=picArr.length; 
-    var picList=document.getElementsByClassName("pic");   
-    var wraps=document.getElementsByClassName("wrap");
+    var picList=document.getElementsByClassName("pic")[0];   
+    var wraps=document.getElementsByClassName("wrap")[0];
+    var titles=document.getElementsByClassName("title")[0].getElementsByTagName("li");
 
 //图片变换函数
 function change(dex){ 
-    var pics=picList[dex].getElementsByTagName("li");
+    var pics=picList.getElementsByTagName("li");
     for(var i=0;i<pics.length;i++){
-            wraps[i].className="wrap wt";
+            titles[i].className="tt";
             pics[i].className="pt";       
     }
-    wraps[dex].className="wrap";
+    switch(dex){
+      case 0:
+        wraps.className="wrap w0";
+        titles[dex].className="tt tb";
+        break;
+      case 1:
+        wraps.className="wrap w1";
+        titles[dex].className="tt tb t1";
+        break;
+      case 2:
+        wraps.className="wrap w2";
+        titles[dex].className="tt tb t2";
+        break;
+      case 3:
+        wraps.className="wrap w3";
+        titles[dex].className="tt tb t3";
+        break;
+    }
     pics[dex].className="pt pn";       
 }
 
